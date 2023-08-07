@@ -7,7 +7,9 @@ Terraform aws examples
 
 docker build -t local-terraform:0.0.1 . 
 
-docker run -it --rm -v J:/jcca/git/terraform_aws_examples/:/wk -w /wk --entrypoint /bin/sh  local-terraform:0.0.1 
+docker run -it --rm -v J:/jcca/git/terraform_aws_examples/:/wk -w /wk --entrypoint /bin/sh  local-terraform:0.0.1
+
+docker run -it --rm -v E:/users/git_repo_private/terraform_aws_examples/:/wk -w /wk --entrypoint /bin/sh  local-terraform:0.0.1
 
 ```
 
