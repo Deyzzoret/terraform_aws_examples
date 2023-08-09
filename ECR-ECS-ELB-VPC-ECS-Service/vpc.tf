@@ -73,6 +73,8 @@ resource "aws_route_table" "route_table" {
     }
 }
 
+# Make available/accessible the subnets inside the VPN 
+# by internet gateway
 resource "aws_route_table_association" "route_table_association1" {
     subnet_id      = aws_subnet.public_subnet_a.id
     route_table_id = aws_route_table.route_table.id
