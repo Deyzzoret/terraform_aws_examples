@@ -40,6 +40,7 @@ resource "aws_internet_gateway" "my_vpc_igw" {
   }
 }
 
+# Allow communication of EC2 instance with the external world
 resource "aws_route_table" "my_vpc_eu-west-3a_public" {
     vpc_id = aws_vpc.my_vpc.id
     route {
